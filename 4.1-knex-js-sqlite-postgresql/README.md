@@ -1,5 +1,7 @@
 # Introdução ao knex.js
 
+- 20 minutos
+
 ## Definição
 
 ## Aplicação
