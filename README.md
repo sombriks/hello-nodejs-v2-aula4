@@ -5,7 +5,7 @@
 - cobrar a criação dos repositórios nos 10 primeiros minutos
 - revisão sobre a ideia de modelar o mundo em tabelas
 
-## Knex.js (sqlite~~/postgresql~~)
+## Knex.js (sqlite ~~/postgresql~~)
 
 - 20 minutos
 - até 10 sobre o npm
