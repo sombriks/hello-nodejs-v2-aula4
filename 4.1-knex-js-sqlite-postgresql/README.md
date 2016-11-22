@@ -8,7 +8,7 @@
 - biblioteca node
 - depende do npm para instalar
 - [query builder](http://knexjs.org/)
-- ajuda na consulta em bancos de dados 
+- ajuda na consulta em bancos de dados
 - compatível com mysql, postgresql, oracle, e sqlite3
 - entender um query builder ajudará a entender melhor um ORM
 
