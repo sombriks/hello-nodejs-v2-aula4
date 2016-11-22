@@ -5,11 +5,18 @@
 - cobrar a criação dos repositórios nos 10 primeiros minutos
 - revisão sobre a ideia de modelar o mundo em tabelas
 
-## Knex.js (sqlite ~~/postgresql~~)
+## [Knex.js (sqlite ~~/postgresql~~) e o npm](4.1-knex-js-sqlite-postgresql/README.md)
 
 - 20 minutos
 - até 10 sobre o npm
 - pacotes fantásticos e como se instalam
+
+## Inserir, remover e atualizar
+
+- 15 minutos
+- construir scripts distintos
+- scripts que leiam argumentos
+- 5 minutos pra cada script
 
 ## Consultas ao banco via knex
 
@@ -19,16 +26,9 @@
 - como construir a consulta via knex
   - mostrar com raw e com as funções do próprio knex
 
-## Inserir, remover e atualizar
-
-- 15 minutos
-- construir scripts distintos
-- scripts que leiam argumentos
-- 5 minutos pra cada script
-
 ## Migrações de banco de dados com knex
 
-- 25 minutos 
+- 25 minutos
 - revisão da ideia de evolução de esquema de dados
 - usando o knex da linha de comando
 - configurando o knexfile.js

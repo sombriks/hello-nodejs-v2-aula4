@@ -32,6 +32,17 @@ npm init .
 - o [npm](https://www.npmjs.com/) (Node Package Manager) gerencia projetos nodejs
 - node por si só já tem módulos úteis
 - o npm fornece mais de [200 mil pacotes](https://en.wikipedia.org/wiki/Npm_(software)#cite_note-KennedyDevay16-7)
- 
+- normalemte vem junto quando você instala o node
+- o comando **"npm init ."** começa uma sessão de perguntas sobre o projeto sendo criado
+- ao final das perguntas, a pasta do projeto terá um arquivo chamado **package.json**
+
+```bash
+npm install knex --save
+npm install sqlite3 --save
+```
+
+- instalar dependências num projeto npm é só isso aí
+- a parte do **"--save"** é pra salvar os pacotes no **package.json**, na seção de dependências
+- abra e veja como o seu **package.json** está
 
 ## Exercício

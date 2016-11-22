@@ -1,6 +1,6 @@
 # Consultando o banco de dados via knex.js
 
-- 20 minutos 
+- 20 minutos
 
 ## Definição
 
