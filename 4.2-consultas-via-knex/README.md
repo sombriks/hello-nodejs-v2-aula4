@@ -55,8 +55,6 @@ knex("convidado").select().where({
 - podemos encadear wheres
 - podemos passar subconsultas para as wheres
 
-
-
 ## Exercício
 
 - transforme as consultas feitas com o *builder* em consultas *knex.raw*
