@@ -11,7 +11,7 @@
 - até 10 sobre o npm
 - pacotes fantásticos e como se instalam
 
-## Inserir, remover e atualizar
+## [Inserir, remover e atualizar](4.3-inserir-remover-atualizar/README.md)
 
 - 15 minutos
 - construir scripts distintos

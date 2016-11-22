@@ -148,3 +148,6 @@ knex("convidado").del().where({
 ## Exercício
 
 - altere os scripts **hello-knex-1.js** e **hello-knex-2.js** para fazerem uso do **db.js**
+- comite suas alterações para o github
+
+[Voltar](../README.md)

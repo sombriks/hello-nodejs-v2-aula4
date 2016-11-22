@@ -44,5 +44,14 @@ npm install sqlite3 --save
 - instalar dependências num projeto npm é só isso aí
 - a parte do **"--save"** é pra salvar os pacotes no **package.json**, na seção de dependências
 - abra e veja como o seu **package.json** está
+- ao instalar pacotes a pasta **node_modules** é criada também
+- a boa etiqueta diz: jamais subirá para o controle de versão a **node_modules**
+- você pode ignorá-la usando o arquivo **.gitignore**
 
 ## Exercício
+
+- crie um arquivo chamado **.gitignore** e escreva nele **node_modules**
+- pronto seu comit não versionará a node modules
+- comite o que fizemos até agora para o git
+
+[Voltar](../README.md)
