@@ -54,9 +54,44 @@ knex("convidado").select().where({
 - a where do builder tem [vários outros idiomas possíveis](http://knexjs.org/#Builder-wheres)
 - podemos encadear wheres
 - podemos passar subconsultas para as wheres
+- o builder suporta algumas sintaxes alternativas
+
+```javascript
+"use strict"
+// hello-knex-7.js
+var knex = require("./db");
+
+if(!process.argv[3]){
+  console.log("usage: node hello-knex-7.js <id> <nome>");
+  process.exit(0);
+}
+
+let q = "update convidado set nomeconvidado = :nome where idconvidado = :id";
+let p = {
+  nome: process.argv[3],
+  id: process.argv[2]
+};
+
+knex.raw(q,p).then(() => {
+  // você pode encadear consultas assim
+  knex.raw("select * from convidado").then((ret) => {
+    var i = ret.length;
+    while(i--){
+      console.log(ret[i]);
+    }
+    process.exit(0);
+  });
+});
+```
+
+- caso o builder de modo algum lhe agrade, existe ainda a opção de usar SQL diretamente
+- atenção para o dialeto SQL do sgbd
+- sempre use variáveis nomeadas, jamais concatene SQL (evite o [bobby tables](https://xkcd.com/327/))
+- no modo raw, o ret tem o atributo **rows**
 
 ## Exercício
 
-- transforme as consultas feitas com o *builder* em consultas *knex.raw*
+- crie um insert usando *knex.raw* e chame de hello-knex-8.js
+- você deve receber o nome que deseja incluir
 
 [Voltar](../README.md)

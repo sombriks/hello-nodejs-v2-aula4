@@ -18,7 +18,7 @@
 - scripts que leiam argumentos
 - 5 minutos pra cada script
 
-## Consultas ao banco via knex
+## [Consultas ao banco via knex](4.2-consultas-via-knex/README.md)
 
 - 20 minutos
 - usar o banco da aula 3
@@ -26,7 +26,7 @@
 - como construir a consulta via knex
   - mostrar com raw e com as funções do próprio knex
 
-## Migrações de banco de dados com knex
+## [Migrações de banco de dados com knex](4.4-migracoes-banco-de-dados-via-knex/README.md)
 
 - 25 minutos
 - revisão da ideia de evolução de esquema de dados
