@@ -94,6 +94,7 @@ module.exports = knex;
 
 ```javascript
 // hello-knex-3.js
+"use strict"
 const knex = require("./db");
 
 if(!process.argv[3]){
@@ -124,6 +125,7 @@ knex("convidado").update({
 
 ```javascript
 // hello-knex-4.js
+"use strict"
 const knex = require("./db");
 
 if(!process.argv[2]){

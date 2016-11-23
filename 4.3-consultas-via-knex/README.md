@@ -14,6 +14,7 @@
 
 ```javascript
 // hello-knex-5.js
+"use strict"
 const knex = require("./db");
 
 knex("convidado").select().then(function(ret){
@@ -31,6 +32,7 @@ knex("convidado").select().then(function(ret){
 
 ```javascript
 // hello-knex-6.js
+"use strict"
 const knex = require("./db");
 
 if(!process.argv[2]){
@@ -61,6 +63,7 @@ knex("convidado").select().where({
 ```javascript
 "use strict"
 // hello-knex-7.js
+"use strict"
 const knex = require("./db");
 
 if(!process.argv[3]){
