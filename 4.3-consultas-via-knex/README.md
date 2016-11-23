@@ -14,13 +14,13 @@
 
 ```javascript
 // hello-knex-5.js
-var knex = require("./db");
+const knex = require("./db");
 
 knex("convidado").select().then(function(ret){
   console.log("id\t\tnome")
-  var i = ret.length;
+  let i = ret.length;
   while(i--){
-    var conv = ret[i];
+    let conv = ret[i];
     console.log(`${conv.idconvidado}\t\t${conv.nomeconvidado}`);
   }
   process.exit(0);
@@ -31,7 +31,7 @@ knex("convidado").select().then(function(ret){
 
 ```javascript
 // hello-knex-6.js
-var knex = require("./db");
+const knex = require("./db");
 
 if(!process.argv[2]){
   console.log("usage: node hello-knex-6.js <id>");
@@ -42,10 +42,12 @@ knex("convidado").select().where({
   idconvidado:process.argv[2]
 }).then(function(ret){
   console.log("id\t\tnome")
-  var i = ret.length;
+  let i = ret.length;
   while(i--){
-    var conv = ret[i];
+    let conv = ret[i];
     console.log(conv);
+    // console.log(Object.values(conv));
+    // console.log(Object.keys(conv).map(key => conv[key]));
   }
   process.exit(0);
 });
@@ -59,7 +61,7 @@ knex("convidado").select().where({
 ```javascript
 "use strict"
 // hello-knex-7.js
-var knex = require("./db");
+const knex = require("./db");
 
 if(!process.argv[3]){
   console.log("usage: node hello-knex-7.js <id> <nome>");
@@ -75,7 +77,7 @@ let p = {
 knex.raw(q,p).then(() => {
   // você pode encadear consultas assim
   knex.raw("select * from convidado").then((ret) => {
-    var i = ret.length;
+    let i = ret.length;
     while(i--){
       console.log(ret[i]);
     }

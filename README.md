@@ -11,14 +11,14 @@
 - até 10 sobre o npm
 - pacotes fantásticos e como se instalam
 
-## [Inserir, remover e atualizar](4.3-inserir-remover-atualizar/README.md)
+## [Inserir, remover e atualizar](4.2-inserir-remover-atualizar/README.md)
 
 - 15 minutos
 - construir scripts distintos
 - scripts que leiam argumentos
 - 5 minutos pra cada script
 
-## [Consultas ao banco via knex](4.2-consultas-via-knex/README.md)
+## [Consultas ao banco via knex](4.3-consultas-via-knex/README.md)
 
 - 20 minutos
 - usar o banco da aula 3
