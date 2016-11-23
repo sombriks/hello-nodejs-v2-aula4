@@ -134,4 +134,15 @@ mudou de ideia? *rollback, babe*
 
 ## Exercício
 
+criem:
+
+- um migrate com a tabela cachorro
+- um migrate inserindo 2 cachorros
+- um migrate adicionando a coluna marcacachorro à tabela
+- tentem fazer *rollback* e mudem de ideia de novo
+- um arquivo a ser executado `$ node meuscachorros.js` que recebe o nome e a marca do cão e insere o cachorro na tabela
+- um arquivo a ser executado `$ node cademeucatiorro.js` que busca um cachorro pelo nome
+
+*e tenham esses scripts no github de vocês!*
+
 [Voltar](../README.md)
