@@ -61,7 +61,6 @@ knex("convidado").select().where({
 - o builder suporta algumas sintaxes alternativas
 
 ```javascript
-"use strict"
 // hello-knex-7.js
 "use strict"
 const knex = require("./db");
