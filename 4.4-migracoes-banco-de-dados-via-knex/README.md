@@ -134,4 +134,6 @@ mudou de ideia? *rollback, babe*
 
 ## Exercício
 
+- tenham estes scripts todos no github de vocês!
+
 [Voltar](../README.md)
