@@ -16,11 +16,12 @@
 
 ```javascript
 // hello-knex-1.js
-var knex = require("knex")({
+const knex = require("knex")({
   client: "sqlite3",
   connection: {
     filename: "./hello.sqlite"
-  }
+  },
+  useNullAsDefault: true // coisas de sqlite.. ¯\_(ツ)_/¯
 });
 
 // criar uma tabela
@@ -46,11 +47,12 @@ knex.schema.createTable("convidado", (table) =>{
 
 ```javascript
 // hello-knex-2.js
-var knex = require("knex")({
+const knex = require("knex")({
   client: "sqlite3",
   connection: {
     filename: "./hello.sqlite"
-  }
+  },
+  useNullAsDefault: true // ¯\_(ツ)_/¯
 });
 
 // queremos um nome para este convidado
@@ -63,7 +65,7 @@ if(!process.argv[2]){
 knex("convidado").insert({
   nomeconvidado:process.argv[2]
 },"idconvidado").then((ret) => {
-  console.log("convidado inserido com a chave %s",ret[0]);
+  console.log(`convidado inserido com a chave ${ret[0]}`);
   process.exit(0);
 }).catch((err)=>{
   console.log(err);
@@ -72,16 +74,17 @@ knex("convidado").insert({
 ```
 
 - o código lembra mais javascript do que sql
-- você pode conferir seus dados com o **db browser** visto na aula 3
+- você pode conferir seus dados com o **db browser** (*sqlite-browser*) visto na aula 3
 - aquela parte de configurar o banco é sempre igual
 
 ```javascript
 // db.js
-var knex = require("knex")({
+const knex = require("knex")({
   client: "sqlite3",
   connection: {
     filename: "./hello.sqlite"
-  }
+  },
+  useNullAsDefault: true // ¯\_(ツ)_/¯
 });
 module.exports = knex;
 ```
@@ -91,7 +94,7 @@ module.exports = knex;
 
 ```javascript
 // hello-knex-3.js
-var knex = require("./db");
+const knex = require("./db");
 
 if(!process.argv[3]){
   console.log("usage: node hello-knex-3.js <id> <nome>");
@@ -107,9 +110,9 @@ knex("convidado").update({
 }).where({
   idconvidado:id
 }).then((ret) => {
-  console.log("convidado %s renomeado para %s",id,nome);
+  console.log(`convidado ${id} renomeado para ${nome}`);
   process.exit(0);
-}).catch(function(err){// caso você goste mais desta sintaxe
+}).catch(function(err){ // caso você goste mais desta sintaxe
   console.log(err);
   process.exit(1);
 });
@@ -121,7 +124,7 @@ knex("convidado").update({
 
 ```javascript
 // hello-knex-4.js
-var knex = require("./db");
+const knex = require("./db");
 
 if(!process.argv[2]){
   console.log("usage: node hello-knex-4.js <id>");
