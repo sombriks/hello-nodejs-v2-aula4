@@ -37,7 +37,7 @@ $ knex migrate:make cachorro_inicial
 
 `$ knex init` cria um arquivo `knexfile.js`, que nada mais é do que o nosso conhecido `db.js` *on steroids*
 
-```
+```bash
 .
 ├── db.js
 ├── hallo-knex-1.js
