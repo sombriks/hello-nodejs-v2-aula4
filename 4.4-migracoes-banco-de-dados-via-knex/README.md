@@ -69,7 +69,7 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  knex.schema.dropTableIfExists("cachorro");
+  return knex.schema.dropTableIfExists("cachorro");
 };
 ```
 
@@ -114,13 +114,13 @@ ops! esquecemos de escolher a marca do cachorro:
 ```javascript
 // 20161123000421_adiciona_marca_cachorro.js
 exports.up = function(knex, Promise) {
-  return knex.schema.alterTable("cachorro", table => {
+  return knex.schema.table("cachorro", (table) => {
     table.string("marcacachorro");
   });
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.table("cachorro", table => dropColumn("marcacachorro"));
+  return knex.schema.table("cachorro", (table) => table.dropColumn("marcacachorro"));
 };
 ```
 
