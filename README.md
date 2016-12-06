@@ -5,6 +5,8 @@
 - cobrar a criação dos repositórios nos 10 primeiros minutos
 - revisão sobre a ideia de modelar o mundo em tabelas
 
+[Aula 1](https://github.com/sombriks/hello-nodejs-v2-aula1) | [Aula 2]((https://github.com/sombriks/hello-nodejs-v2-aula2) | [Aula 3](https://github.com/sombriks/hello-nodejs-v2-aula3) | Aula 4 | [Aula 5](https://github.com/sombriks/hello-nodejs-v2-aula5) | [Aula 6](https://github.com/sombriks/hello-nodejs-v2-aula6) | [Aula 7](https://github.com/sombriks/hello-nodejs-v2-aula7) | Aula 8 | Aula 9
+
 ## [Knex.js (sqlite ~~/postgresql~~) e o npm](4.1-knex-js-sqlite-postgresql/README.md)
 
 - 20 minutos
